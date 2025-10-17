@@ -77,6 +77,10 @@ h1 {
     align-items: center;
 }
 
+.descricao {
+    z-index: 1;
+}
+
 .pikachu {
     position: absolute;
     top: 50%;
@@ -130,5 +134,31 @@ footer {
 
 /* MOBILE */
 @media (max-width: 480px) {
+    .descricao p {
+        display: none;
+    }
 
+    .sombra {
+        transform: translate(-50%, -220%);
+    }
+
+    .sombra {
+        transform: translate(-50%, -220%);
+    }
+
+    h1 {
+        transform: translate(0, -22%);
+    }
+
+    .descricao h2 {
+        font-size: 38px;
+    }
+
+    .container a {
+        width: 100%;
+    }
+
+    .pikachu {
+        height: 50vh;
+    }
 }
