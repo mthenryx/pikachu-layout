@@ -1,7 +1,13 @@
-:root {
-    --primary-color: #F5CF06;
+/* root é usado por ser uma aplicação global do códego */
+
+/* Para criar uma variavel tem que começar assim (--)*/
+
+:root { 
+    --primary-color: #F5CF06; 
     --secundary-color: #8E4106;
 }
+
+/* Aqui usei o elemento (vh) para que se organize em diferentes alturas de tela*/
 
 body {
     height: 100vh;
@@ -28,6 +34,10 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+/* Aqui usei o elemento (vw) para que se organize em diferentes larguras de tela*/
+
+/* O (z-index) só funciona em elementos que possuem um tipo de posicionamento diferente de static (padrão do CSS), ou seja, ele apenas funciona quando o elemento tem position: relative, absolute, fixed ou sticky. */
 
 .sombra {
     position: absolute;
@@ -92,6 +102,8 @@ footer {
     text-align: center;
     color: var(--secundary-color);
 }
+
+/* Aqui eu comecei a modificar por conta do layou de difentes tamanhos */
 
 /* TABLET */
 @media (max-width: 1024px) {
