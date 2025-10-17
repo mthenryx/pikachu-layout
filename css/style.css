@@ -31,7 +31,7 @@ main {
 
 .sombra {
     position: absolute;
-    font-size: 400px;
+    font-size: 28vw;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -41,7 +41,7 @@ main {
 
 h1 {
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 22vw;
     color: white;
     display: flex;
     justify-content: center;
@@ -87,4 +87,48 @@ h1 {
 footer {
     text-align: center;
     color: var(--secundary-color);
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    body {
+        padding: 30px;
+    }
+
+    main {
+        justify-content: space-between;
+    }
+
+    .sombra {
+         transform: translate(-50%, -180%);
+    }
+
+    h1 {
+        transform: translate(0, -30%);
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        gap: 8px;
+    }
+
+    .descricao p {
+        text-align: center;
+    }
+
+    .pikachu {
+        transform: translate(-45%, -50%);
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
 }
